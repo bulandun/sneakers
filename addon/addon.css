@@ -40,3 +40,5 @@
 .express-insertion{padding:12px;border-bottom:1px solid var(--line);background:#eaf0de}
 .express-insertion button{width:100%;min-height:40px;font-size:14px}
 .express-insertion p{margin:8px 0 0;font-size:12px;line-height:1.5;color:#59634f}
+
+.adobe-addon .canvas{min-height:250px;aspect-ratio:1.12;background:#fff}.adobe-addon .templates{grid-template-columns:1fr}.adobe-addon .template svg{width:80px;height:65px}.adobe-addon .template span{font-size:14px}

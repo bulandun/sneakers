@@ -18,14 +18,14 @@ This creates `dist.zip` with `manifest.json` at the archive root and the complet
 2. Open Add-ons and create a new add-on listing named **DesignXDM Sneaker Studio** (or another available name within 25 characters).
 3. Use the private distribution workflow and upload the generated ZIP as the add-on package.
 4. Use Adobe's preview/test workflow or generated private distribution link, then open the add-on inside an Express document.
-5. Design a shoe and click **Add to Express**. The SDK inserts an 1800 × 1020 transparent PNG on the current page.
+5. Design a shoe and click **Add to Express**. The SDK inserts an 1800 × 1520 transparent PNG on the current page.
 
 Official instructions: https://developer.adobe.com/express/add-ons/docs/guides/build/distribute/private-dist/
 
 ## Checks before public submission
 
 - Open the panel at the normal Adobe Express width and verify all controls are reachable.
-- Test every silhouette and panel, graphic upload/dragging, text, undo/redo, save/open and reload recovery.
+- Test every panel, graphic upload/dragging, text, undo/redo, save/open and reload recovery.
 - Click Add to Express and check the inserted image retains colours, patterns, materials and graphics with no selection borders. Insertion is a flattened PNG; internal designer layers are preserved in saved project files.
 - Check retry behaviour on a connection or insertion error.
 - Test external inspiration links and download permissions inside the host iframe.
@@ -38,6 +38,6 @@ The stable SDK insertion path is implemented and tested with a mock SDK, but mus
 
 **Summary:** Design a sneaker your way with editable panels, colourways, patterns and your own artwork.
 
-**Description:** Create your own sneaker in Adobe Express with five generic silhouettes, independently editable panels, colours, patterns and material-inspired finishes. Add your own logo, artwork or text, position it on the shoe and explore real references from nature, space and museum collections. You choose what to use and make every design decision. Add the finished sneaker to your Express page, download a presentation board, or save an editable project to continue later.
+**Description:** Create your own sneaker in Adobe Express with a detailed designer-sketch template, independently editable panels, colours, patterns and material-inspired finishes. Add your own logo, artwork or text, position it on the shoe and explore real references from nature, space and museum collections. You choose what to use and make every design decision. Add the finished sneaker to your Express page, download a presentation board, or save an editable project to continue later.
 
 **Keywords:** sneaker, shoe, colourway, footwear, design, classroom, patterns, creativity

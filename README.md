@@ -16,7 +16,7 @@ Open http://localhost:3000. To check JavaScript syntax, run `npm run check`.
 
 ## Included
 
-- Five original, generic editable silhouettes: low-top, high-top, runner, chunky and skate.
+- One detailed three-quarter designer sketch with traced editable regions, stitched outlines and pencil shading. Earlier side-profile designs migrate to this template while keeping panel colours and artwork.
 - Eight selectable zones, each with independent colours. Fabric and sole panels also support twelve pattern options (including solid) and six material textures.
 - Custom colour and hex input, pattern accent colour and scale, and a palette saved on the current device.
 - PNG, JPG and WebP upload; movable, resizable, rotatable and mirrorable artwork clipped to the upper.
