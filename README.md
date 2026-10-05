@@ -16,11 +16,13 @@ Open http://localhost:3000. To check JavaScript syntax, run `npm run check`.
 
 ## Included
 
-- Three original, generic editable silhouettes: low-top, high-top and runner.
+- Five original, generic editable silhouettes: low-top, high-top, runner, chunky and skate.
 - Eight selectable zones, each with independent colours. Fabric and sole panels also support twelve pattern options (including solid) and six material textures.
-- Custom colour and hex input, pattern accent colour and scale, and a palette saved for the current session.
+- Custom colour and hex input, pattern accent colour and scale, and a palette saved on the current device.
 - PNG, JPG and WebP upload; movable, resizable, rotatable and mirrorable artwork clipped to the upper.
 - Text, layer selection/reordering/deletion and undo/redo.
+- Automatic device-local draft saving and portable, validated JSON project save/open.
+- Inspiration cards let users explicitly try the suggested pattern or material on the selected panel.
 - Side-view presentation preview, view flip and zoom.
 - Curated inspiration from NOAA comb-jelly photography, NASA Webb imagery and V&A collections, with links and credits. Inspiration adds suggested swatches without recolouring the shoe automatically.
 - Transparent PNG, vector SVG and a presentation board with colour palette and selected reference credits.
@@ -34,7 +36,7 @@ This repository does not require ChatGPT Sites.
 
 ## Prototype limits
 
-- Design state and saved palettes are held in the current browser session and are lost on reload. Export before leaving.
+- Drafts and palettes save in browser storage on the current device. Storage can be blocked or full, and clearing browser data removes drafts. Download a `.sneaker.json` project with **Save project** for a portable backup; **Open** restores the editable design.
 - Adobe Express SDK integration is the next phase. Export currently downloads an image for manual upload into Express.
 - Preview is a clean side-view presentation, not a generated or perspective product mock-up. There is no AI image generation.
 - Mirroring transforms the selected artwork. View flip shows the same design facing the other direction; it does not model a second shoe side.
