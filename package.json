@@ -1,0 +1,11 @@
+{
+  "name": "designxdm-sneaker-designer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive sneaker design prototype for DesignXDM",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js"
+  },
+  "engines": { "node": ">=20" }
+}

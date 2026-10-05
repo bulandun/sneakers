@@ -1,3 +1,49 @@
 # DesignXDM Sneaker Designer
 
-Working browser prototype. Initial setup in progress.
+Find inspiration. Build a colourway. Design your sneaker.
+
+A working browser prototype for an Adobe Express add-on. Users design the shoe themselves; the reference library provides real, credited research sources.
+
+## Run locally
+
+Requires Node.js 20 or newer. No package installation or build is needed.
+
+```sh
+npm start
+```
+
+Open http://localhost:3000. To check JavaScript syntax, run `npm run check`.
+
+## Included
+
+- Three original, generic editable silhouettes: low-top, high-top and runner.
+- Eight selectable zones, each with independent colours. Fabric and sole panels also support twelve pattern options (including solid) and six material textures.
+- Custom colour and hex input, pattern accent colour and scale, and a palette saved for the current session.
+- PNG, JPG and WebP upload; movable, resizable, rotatable and mirrorable artwork clipped to the upper.
+- Text, layer selection/reordering/deletion and undo/redo.
+- Side-view presentation preview, view flip and zoom.
+- Curated inspiration from NOAA comb-jelly photography, NASA Webb imagery and V&A collections, with links and credits. Inspiration adds suggested swatches without recolouring the shoe automatically.
+- Transparent PNG, vector SVG and a presentation board with colour palette and selected reference credits.
+- Responsive layout, keyboard-selectable panels and artwork, and editable numeric artwork coordinates.
+
+## Hosting
+
+The app is static: any static host can serve the `public` directory without a build step. For a Render Static Site connected to this repository, use an empty build command and `public` as the publish directory. A Node web service can instead run `npm start` and will use the supplied `PORT`.
+
+This repository does not require ChatGPT Sites.
+
+## Prototype limits
+
+- Design state and saved palettes are held in the current browser session and are lost on reload. Export before leaving.
+- Adobe Express SDK integration is the next phase. Export currently downloads an image for manual upload into Express.
+- Preview is a clean side-view presentation, not a generated or perspective product mock-up. There is no AI image generation.
+- Mirroring transforms the selected artwork. View flip shows the same design facing the other direction; it does not model a second shoe side.
+- Reference discovery is a small curated library, not a live AI research service. External reference images and fonts require internet access; source links remain available when an image fails to load.
+- Material textures are visual design treatments, not manufacturing specifications.
+- Uploaded graphics should be artwork the user has permission to use. Reference photos are not automatically embedded in sneaker exports.
+
+## Code
+
+`public/index.html` defines the workspace, `public/style.css` styles it, and `public/app.js` owns the design state, interactive SVG, reference library and export. `server.mjs` is an optional dependency-free local/Node host. Shoe geometry is editable SVG, so colours and graphics are preserved during export.
+
+Optional browser WebMCP APIs are feature-detected and expose the same panel state/actions. They have no backend or authentication requirement.
