@@ -1,0 +1,42 @@
+/* The editor fills the Adobe Express panel without horizontal scrolling. */
+.adobe-addon{background:#f7f8f3;min-width:0}
+.adobe-addon header{padding:12px;gap:10px;flex-wrap:wrap;min-height:0}
+.adobe-addon .brand-detail,.adobe-addon .prototype{display:none}
+.adobe-addon .brand strong{font-size:17px}
+.adobe-addon .brand-mark{height:30px;width:30px;font-size:23px}
+.adobe-addon .header-actions{width:100%;flex-wrap:wrap;gap:5px;justify-content:flex-start}
+.adobe-addon .header-actions button{padding:7px 9px;font-size:12px}
+.adobe-addon .header-actions button span{display:none}
+.adobe-addon .studio{display:flex;flex-direction:column;min-height:0}
+.adobe-addon .workspace{order:0;padding:16px 12px}
+.adobe-addon .left-panel{order:1;display:block;border-right:0;border-top:1px solid var(--line);padding:20px 14px}
+.adobe-addon .right-panel{order:2;display:block;padding:20px 14px;border-left:0;border-top:1px solid var(--line)}
+.adobe-addon .canvas{min-height:180px;aspect-ratio:1.5;margin-top:15px}
+.adobe-addon .canvas-top{flex-wrap:wrap}
+.adobe-addon .canvas-top h2{font-size:20px;overflow-wrap:anywhere}
+.adobe-addon .canvas-top .eyebrow{font-size:10px}
+.adobe-addon .canvas-tag{top:10px;left:10px;font-size:10px}
+.adobe-addon .canvas-caption{font-size:8px;left:10px;right:10px}
+.adobe-addon .canvas-toolbar{flex-wrap:wrap}
+.adobe-addon .tool-actions button span{display:none}
+.adobe-addon .colourway-bar{flex-wrap:wrap}
+.adobe-addon .templates{grid-template-columns:repeat(3,1fr)}
+.adobe-addon .zones{grid-template-columns:1fr 1fr;gap:4px}
+.adobe-addon .zone-button{padding:9px 6px;font-size:13px}
+.adobe-addon .inspire-button{margin-top:20px}
+.adobe-addon .inspire-button>span:last-child{display:block}
+.adobe-addon .challenge{margin-top:20px}
+.adobe-addon .patterns{grid-template-columns:repeat(3,1fr)}
+.adobe-addon .patterns span{font-size:12px}
+.adobe-addon .swatches{grid-template-columns:repeat(7,1fr)}
+.adobe-addon .inspiration-strip{flex-wrap:wrap;padding:12px}
+.adobe-addon .inspiration-strip button{margin-left:0}
+.adobe-addon .reference-grid{grid-template-columns:1fr}
+.adobe-addon dialog{width:calc(100% - 12px);padding:16px;max-height:94vh}
+.adobe-addon .dialog-heading h2{font-size:23px}
+.adobe-addon .reference-photo,.adobe-addon .reference-art{height:160px}
+.adobe-addon .territories button{font-size:12px;padding:8px}
+.adobe-addon .export-options{flex-direction:column}
+.express-insertion{padding:12px;border-bottom:1px solid var(--line);background:#eaf0de}
+.express-insertion button{width:100%;min-height:40px;font-size:14px}
+.express-insertion p{margin:8px 0 0;font-size:12px;line-height:1.5;color:#59634f}

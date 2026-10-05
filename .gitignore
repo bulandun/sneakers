@@ -4,3 +4,6 @@ node_modules/
 .env.*
 !.env.example
 test-results/
+
+addon-dist/
+DesignXDM-Sneaker-Studio-Adobe-Express.zip

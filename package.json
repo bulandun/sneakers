@@ -5,7 +5,10 @@
   "description": "Interactive sneaker design prototype for DesignXDM",
   "scripts": {
     "start": "node server.mjs",
-    "check": "node --check server.mjs && node --check public/app.js"
+    "check": "node --check server.mjs && node --check public/app.js",
+    "package:addon": "node scripts/package-addon.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

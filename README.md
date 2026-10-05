@@ -37,7 +37,7 @@ This repository does not require ChatGPT Sites.
 ## Prototype limits
 
 - Drafts and palettes save in browser storage on the current device. Storage can be blocked or full, and clearing browser data removes drafts. Download a `.sneaker.json` project with **Save project** for a portable backup; **Open** restores the editable design.
-- Adobe Express SDK integration is the next phase. Export currently downloads an image for manual upload into Express.
+- Adobe Express integration is included in the add-on package. See [ADOBE-EXPRESS.md](ADOBE-EXPRESS.md). The standalone Render preview retains download exports.
 - Preview is a clean side-view presentation, not a generated or perspective product mock-up. There is no AI image generation.
 - Mirroring transforms the selected artwork. View flip shows the same design facing the other direction; it does not model a second shoe side.
 - Reference discovery is a small curated library, not a live AI research service. External reference images and fonts require internet access; source links remain available when an image fails to load.
@@ -49,3 +49,7 @@ This repository does not require ChatGPT Sites.
 `public/index.html` defines the workspace, `public/style.css` styles it, and `public/app.js` owns the design state, interactive SVG, reference library and export. `server.mjs` is an optional dependency-free local/Node host. Shoe geometry is editable SVG, so colours and graphics are preserved during export.
 
 Optional browser WebMCP APIs are feature-detected and expose the same panel state/actions. They have no backend or authentication requirement.
+
+## Adobe Express package
+
+Run `npm run package:addon` to produce the upload ZIP. The add-on sources are in `addon/`; the package reuses the same designer as the standalone preview and adds a narrow-panel layout and stable SDK insertion. See [ADOBE-EXPRESS.md](ADOBE-EXPRESS.md) for private testing and submission preparation.

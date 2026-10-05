@@ -115,3 +115,6 @@ $('project-file').addEventListener('change',async()=>{const file=$('project-file
 window.addEventListener('pagehide',saveDraft);
 restoreDraft();
 render();
+
+// Narrow bridge for the Adobe Express adapter; all design state remains in the editor.
+window.designXDMSneaker={getName:()=>state.name,createPNG:async()=>{const image=await renderImage();const canvas=document.createElement('canvas');canvas.width=1800;canvas.height=1020;canvas.getContext('2d').drawImage(image,0,0,1800,1020);const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('Unable to prepare sneaker image.');return blob;}};

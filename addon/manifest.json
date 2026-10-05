@@ -1,0 +1,18 @@
+{
+  "testId": "designxdm-sneaker-studio",
+  "name": "DesignXDM Sneaker Studio",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "requirements": {
+    "apps": [{ "name": "Express", "apiVersion": 1 }],
+    "supportsTouch": true
+  },
+  "entryPoints": [{
+    "type": "panel",
+    "id": "sneaker-studio",
+    "main": "index.html",
+    "permissions": {
+      "sandbox": ["allow-popups", "allow-downloads"]
+    }
+  }]
+}
