@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const out = path.join(root, 'addon-dist');
+const out = path.join(root, 'dist');
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 for (const file of ['app.js', 'style.css']) await copyFile(path.join(root, 'public', file), path.join(out, file));
@@ -35,5 +35,5 @@ for (const file of files) {
 }
 const directory = Buffer.concat(central), end = Buffer.alloc(22); end.writeUInt32LE(0x06054b50); end.writeUInt16LE(files.length, 8); end.writeUInt16LE(files.length, 10); end.writeUInt32LE(directory.length, 12); end.writeUInt32LE(offset, 16);
 const zip = Buffer.concat([...locals, directory, end]);
-await writeFile(path.join(root, 'DesignXDM-Sneaker-Studio-Adobe-Express.zip'), zip);
-console.log(`Created Adobe Express package: ${zip.length} bytes, ${files.length} root files.`);
+await writeFile(path.join(root, 'dist.zip'), zip);
+console.log(`Created dist.zip: ${zip.length} bytes, ${files.length} root files.`);

@@ -52,4 +52,4 @@ Optional browser WebMCP APIs are feature-detected and expose the same panel stat
 
 ## Adobe Express package
 
-Run `npm run package:addon` to produce the upload ZIP. The add-on sources are in `addon/`; the package reuses the same designer as the standalone preview and adds a narrow-panel layout and stable SDK insertion. See [ADOBE-EXPRESS.md](ADOBE-EXPRESS.md) for private testing and submission preparation.
+Run `npm run package` to produce the upload ZIP. The add-on sources are in `addon/`; the package reuses the same designer as the standalone preview and adds a narrow-panel layout and stable SDK insertion. See [ADOBE-EXPRESS.md](ADOBE-EXPRESS.md) for private testing and submission preparation.

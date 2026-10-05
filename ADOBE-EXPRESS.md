@@ -5,10 +5,12 @@ The add-on is named **DesignXDM Sneaker Studio** (24 characters, within Adobe's 
 ## Build the upload ZIP
 
 ```sh
-npm run package:addon
+npm install
+rm -rf dist dist.zip
+npm run package
 ```
 
-This creates `DesignXDM-Sneaker-Studio-Adobe-Express.zip` with `manifest.json` at the archive root and the complete bundled interface. `addon-dist/` contains the same uncompressed files. The existing Render site stays a standalone preview; the ZIP is what Adobe hosts for the add-on.
+This creates `dist.zip` with `manifest.json` at the archive root and the complete bundled interface. `dist/` contains the same uncompressed files. The existing Render site stays a standalone preview; the ZIP is what Adobe hosts for the add-on.
 
 ## Private testing in Adobe Express
 

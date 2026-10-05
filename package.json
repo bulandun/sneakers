@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.mjs",
     "check": "node --check server.mjs && node --check public/app.js",
-    "package:addon": "node scripts/package-addon.mjs"
+    "package:addon": "node scripts/package-addon.mjs",
+    "package": "node scripts/package-addon.mjs"
   },
   "engines": {
     "node": ">=20"
